@@ -1,0 +1,168 @@
+.container {
+    margin: 20px auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+}
+
+.container h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.calendar-section,
+.schedule-section {
+    margin-bottom: 40px;
+}
+
+.calendar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.holiday-tile {
+    background-color: #25d26d;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.holiday-info {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.holiday-info-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.modal-content {
+    text-align: left;
+}
+
+.close-button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #36c150;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.schedule-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Adds space between schedule items */
+}
+
+/* Individual schedule item styling */
+.schedule-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    /* Fixed width for uniformity */
+    transition: box-shadow 0.3s ease;
+}
+
+.schedule-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Elevates the box on hover */
+}
+
+/* Text styling inside schedule items */
+.schedule-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Notify button styling inside schedule items */
+.notify-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for notify button */
+.notify-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the notification form */
+.notification-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 400px;
+}
+
+.notification-form h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.notification-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.notification-form input,
+.notification-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,232 @@
+/* Main container styling */
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #eef5f7;
+    /* Soft eco-friendly color */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(39, 174, 96, 0.2);
+    /* Green border for eco-theme */
+}
+
+/* Header section styling */
+.tag-line {
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #e8f5e9, #b8e994);
+    /* Gradient background for eco-feel */
+}
+
+.tag-line h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tag-line h3 {
+    font-size: 1.3rem;
+    color: #27ae60;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Label styling */
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f7f9fc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Input focus styling */
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="file"]:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.2);
+}
+
+/* Custom select dropdown styling */
+select {
+    cursor: pointer;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #2ecc71;
+}
+
+button[type="submit"]:active {
+    background-color: #27ae60;
+    transform: translateY(0);
+}
+
+/* Error message styling */
+.error-message {
+    color: #561a13;
+    /* Red for errors */
+    margin-bottom: 10px;
+    background-color: #fceae9;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Success message popup styling */
+.success-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    z-index: 100;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Container for the coin animation */
+.coin-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Close button (X) at top-right */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Styling for the animated coin */
+.rotating-coin {
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinning animation for coin */
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Message below the coin */
+.congrats-message {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Popup fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Checkbox or radio button styling */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .main-div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .tag-line h1 {
+        font-size: 2rem;
+    }
+
+    .tag-line h3 {
+        font-size: 1.1rem;
+    }
+}

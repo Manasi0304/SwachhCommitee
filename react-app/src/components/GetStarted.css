@@ -1,0 +1,24 @@
+.inner-container {
+    gap: 1.5rem;
+    background: #012b03; /* Change to a green color representing sustainability */
+    padding: 2rem;
+    border-radius: 10px;
+    border: 6px solid #3e8b3f; /* Darker green for the border */
+    text-align: center;
+}
+
+.inner-container .primaryText {
+    color: white; /* Keep white for contrast */
+    font-weight: 600;
+}
+
+.inner-container .secondaryText {
+    color: rgba(255, 255, 255, 0.8); /* Slightly less transparent white for better readability */
+}
+
+.inner-container .button {
+    background: #014304; /* Lighter green for the button */
+    border: 2px solid white;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}

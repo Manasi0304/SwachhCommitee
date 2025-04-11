@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Product Upload Section",
+    "detail": "Have an item you no longer need? Upload it in just a few clicks! Our easy-to-use interface allows you to take a picture, add a description, and list your product. Enjoy a hassle-free experience with intuitive steps that make the process smooth and efficient."
+    ,"image": "./upload.png"
+  },
+  {
+    "name": "Marketplace for Users",
+    "detail": "Our marketplace connects people who want to purchase second-hand goods. Browse through a variety of categories like electronics, clothing, furniture, and more. Buyers can easily find what they need, and sellers can make extra income—all while contributing to a more sustainable future.",
+    "image": "./marketplace.png"
+  },
+  {
+    "name": "Chatbot Assistance",
+    "detail": "Need help navigating the platform? Our intelligent chatbot is here to assist! Whether you have a question about how to upload products, or want guidance on sustainable practices, the chatbot provides instant answers and personalized support.",
+    "image": "./chatbot.png"
+  },
+  {
+    "name": "Guidance Section",
+    "detail": "Learn the best practices for managing waste in your daily life. Our Guidance Section offers tips, tricks, and knowledge on topics like reducing single-use plastics, composting, and recycling. Stay informed and take steps that help in protecting the environment.",
+    "image": "./guidance.png"
+  },
+  {
+    "name": "User Profile & Dashboard",
+    "detail": "Manage your entire journey on our platform through your personalized profile. Keep track of your uploaded products, monitor buyer interactions, and review your earnings from successful sales.",
+    "image": "./dashboard.png"
+  },
+  {
+    "name": "Reward System for Recycling",
+    "detail": "Get rewarded for contributing to a greener planet! For every product you sell or recycle through our platform, earn points that can be redeemed for discounts on future purchases. The more you recycle, the more you save, helping both your wallet and the environment.",
+    "image": "./reward.png"
+  }
+]
+

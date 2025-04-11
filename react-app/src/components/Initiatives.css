@@ -1,0 +1,117 @@
+/* Main container wrapper for consistency */
+
+.initiatives-container-wrapper {
+  max-width: 1200px; /* Adjust this width to match the main content width */
+  margin: 0 auto; /* Center the content */
+  padding: 1.5rem; /* Padding for spacing */
+
+}
+
+.addbg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* Background Image */
+  background-image: url('../../public/initiatives_bg.jpg'); /* Update the path */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  padding: 2rem; /* Add some padding for better spacing */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Title styling */
+.initiatives-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Initiatives container */
+.initiatives-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Initiatives grid for cards */
+.initiatives-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Evenly distribute space between cards */
+  gap: 1.5rem; /* Gap between cards */
+}
+
+/* Initiative card styling */
+.initiative-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  text-align: center;
+  width: calc(33.33% - 1rem); /* Display 3 cards per row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for initiative cards */
+.initiative-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+/* Initiative image styling */
+.initiative-image {
+  width: 90px;
+  height: auto;
+  margin: 0 auto 1rem; /* Center image with margin below */
+  display: block;
+}
+
+/* Learn More button */
+.learn-more-btn {
+  background-color: #ffc107;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  align-self: center; /* Center button in card */
+  width: 150px;
+}
+
+.learn-more-btn:hover {
+  background-color: #e6a700; /* Darker yellow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .initiative-card {
+    width: calc(45% - 1rem); /* Display 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .initiative-card {
+    width: calc(100% - 2rem); /* Display 1 card per row on mobile */
+  }
+}
+
+/* Initiative text styling */
+.initiative-card h3 {
+  font-size: 1.1rem; /* Slightly smaller title */
+  margin-bottom: 0.5rem;
+  color: #333; /* Dark color for title */
+}
+
+.initiative-card p {
+  font-size: 0.85rem; /* Smaller description text */
+  color: #666; /* Lighter color for description */
+  margin-bottom: 0.75rem;
+}

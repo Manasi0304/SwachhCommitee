@@ -1,0 +1,110 @@
+.hero-wrapper {
+  color: white;
+  position: relative;
+  z-index: 1;
+  height: 90vh;
+}
+
+.hero-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+}
+
+/* left side */
+.hero-left {
+  gap: 2.5rem;
+  width: 100%; 
+  text-align: left; 
+  margin-left: 5px;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 1;
+  margin-top: 40px; 
+}
+
+.hero-title > h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.flexhero-des {
+  text-align: left; 
+}
+
+.flexhero-des > span:nth-child(1),
+.flexhero-des > span:nth-child(2),
+.secondaryText {
+  color: #ffffff; 
+}
+
+.stats {
+  width: 100%;
+  justify-content: flex-start; /* Align stats to the left */
+  margin-top: 2rem; /* Space below text content */
+  display: flex; /* Use flexbox for stats */
+  gap: 2rem; /* Add gap between stats */
+}
+
+.stat {
+  display: flex;
+  flex-direction: column; /* Stack stat number and label vertically */
+  align-items: flex-start; /* Align text to the left */
+}
+
+.stat > :nth-child(1) {
+  font-size: 2rem;
+}
+
+.stat > :nth-child(1) > :last-child {
+  color: orange;
+}
+
+
+/* mobile screens */
+@media (max-width: 640px) {
+
+  .hero-wrapper {
+    height: 700px;
+  }
+
+
+  .hero-title > h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .stats {
+    justify-content: flex-start; /* Keep stats left aligned */
+    gap: 1.5rem; /* Adjust gap for mobile */
+  }
+
+  .stat > :nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .stat > :nth-child(2) {
+    font-size: 0.8rem;
+  }
+
+}
+
+/* Media query for screens between 641px and 1130px */
+@media (min-width: 641px) and (max-width: 1130px) {
+
+  .hero-wrapper {
+    height: 700px;
+  }
+
+  .hero-title {
+    margin-top: 5rem; /* Adjust margin for this dimension */
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+}
